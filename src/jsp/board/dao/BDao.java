@@ -19,13 +19,13 @@ public class BDao {
 	private static BDao instance = new BDao();
 	DataSource dataSource;
 	
-	int listCount = 10;		// ÇÑ ÆäÀÌÁö´ç º¸¿©ÁÙ °Ô½Ã¹°ÀÇ ¼ö
-    int pageCount = 5;		// ÇÏ´Ü¿¡ º¸¿©ÁÙ ÆäÀÌÁö ¸®½ºÆ®ÀÇ ¼ö
+	int listCount = 10;		// í•œ íŽ˜ì´ì§€ë‹¹ ë³´ì—¬ì¤„ ê²Œì‹œë¬¼ì˜ ìˆ˜
+    	int pageCount = 5;		// í•˜ë‹¨ì— ë³´ì—¬ì¤„ íŽ˜ì´ì§€ ë¦¬ìŠ¤íŠ¸ì˜ ìˆ˜
 	
 	private BDao() {
     	try {
-    		// lookup ÇÔ¼öÀÇ ÆÄ¶ó¹ÌÅÍ´Â context.xml¿¡ ¼³Á¤ µÈ
-    		// name(jdbc/Oracle11g)°ú µ¿ÀÏÇØ¾ß ÇÑ´Ù.
+    		// lookup í•¨ìˆ˜ì˜ íŒŒë¼ë¯¸í„°ëŠ” context.xmlì— ì„¤ì • ëœ
+    		// name(jdbc/Oracle11g)ê³¼ ë™ì¼í•´ì•¼ í•œë‹¤.
     		Context context = new InitialContext();
     		dataSource = (DataSource)context.lookup("java:comp/env/jdbc/Oracle11g");
     	} catch(Exception e) {
@@ -623,10 +623,10 @@ public class BDao {
     	PreparedStatement pstmt = null;
     	ResultSet resultSet = null;
     	
-    	int listCount = 10;		// ÇÑ ÆäÀÌÁö´ç º¸¿©ÁÙ °Ô½Ã¹°ÀÇ ¼ö
-        int pageCount = 5;		// ÇÏ´Ü¿¡ º¸¿©ÁÙ ÆäÀÌÁö ¸®½ºÆ®ÀÇ ¼ö
+    	int listCount = 10;		// í•œ íŽ˜ì´ì§€ë‹¹ ë³´ì—¬ì¤„ ê²Œì‹œë¬¼ì˜ ìˆ˜
+        int pageCount = 5;		// í•˜ë‹¨ì— ë³´ì—¬ì¤„ íŽ˜ì´ì§€ ë¦¬ìŠ¤íŠ¸ì˜ ìˆ˜
         
-        // ÃÑ °Ô½Ã¹°ÀÇ ¼ö
+        // ì´ ê²Œì‹œë¬¼ì˜ ìˆ˜
         int totalCount = 0;
         try {
         	con = dataSource.getConnection();
@@ -648,22 +648,22 @@ public class BDao {
     		}
     	}
         
-        // ÃÑ ÆäÀÌÁö ¼ö 
+        // ì´ íŽ˜ì´ì§€ ìˆ˜ 
         int totalPage = totalCount / listCount;
         if(totalCount % listCount > 0)
         	totalPage++;
         
-        // ÇöÀç ÆäÀÌÁö
+        // í˜„ìž¬ íŽ˜ì´ì§€
         int myCurPage = curPage;
         if(myCurPage > totalPage)
         	myCurPage = totalPage;
         if(myCurPage < 1)
         	myCurPage = 1;
         
-        // ½ÃÀÛ ÆäÀÌÁö
+        // ì‹œìž‘ íŽ˜ì´ì§€
         int startPage = ((myCurPage - 1) / pageCount) * pageCount + 1;
         
-        // ³¡ ÆäÀÌÁö
+        // ë íŽ˜ì´ì§€
         int endPage = startPage + pageCount - 1;
         if(endPage > totalPage)
         	endPage = totalPage;
@@ -689,7 +689,7 @@ public class BDao {
     	int listCount = 10;
         int pageCount = 5;
         
-        // ÃÑ °Ô½Ã¹°ÀÇ ¼ö
+        // ì´ ê²Œì‹œë¬¼ì˜ ìˆ˜
         int totalCount = 0;
         try {
         	con = dataSource.getConnection();
@@ -712,22 +712,22 @@ public class BDao {
     		}
     	}
         
-        // ÃÑ ÆäÀÌÁö ¼ö 
+        // ì´ íŽ˜ì´ì§€ ìˆ˜ 
         int totalPage = totalCount / listCount;
         if(totalCount % listCount > 0)
         	totalPage++;
         
-        // ÇöÀç ÆäÀÌÁö
+        // í˜„ìž¬ íŽ˜ì´ì§€
         int myCurPage = curPage;
         if(myCurPage > totalPage)
         	myCurPage = totalPage;
         if(myCurPage < 1)
         	myCurPage = 1;
         
-        // ½ÃÀÛ ÆäÀÌÁö
+        // ì‹œìž‘ íŽ˜ì´ì§€
         int startPage = ((myCurPage - 1) / pageCount) * pageCount + 1;
         
-        // ³¡ ÆäÀÌÁö
+        // ë íŽ˜ì´ì§€
         int endPage = startPage + pageCount - 1;
         if(endPage > totalPage)
         	endPage = totalPage;
