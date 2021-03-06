@@ -1,6 +1,8 @@
 # MVC BOARD(JSP/Servlet)
 <hr>
 
+JSP/Servlet으로 구현한 MVC 게시판입니다.
+
 ### PDF 포트폴리오
 https://drive.google.com/file/d/1Xcu0Kat5bFhnNfJg-GDB_Sreh9-WcQ-T/view?usp=sharing
 <br><br>
