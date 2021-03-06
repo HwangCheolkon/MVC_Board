@@ -5,7 +5,7 @@
 https://drive.google.com/file/d/1Xcu0Kat5bFhnNfJg-GDB_Sreh9-WcQ-T/view?usp=sharing
 <br><br>
 
-### 동영상 
+### 동영상 포트폴리오
 https://youtu.be/vk8BofD4aAc
 <br><br>
 
