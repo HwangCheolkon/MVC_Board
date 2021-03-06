@@ -2,10 +2,10 @@
 <hr>
 
 ### PDF 포트폴리오
-https://drive.google.com/file/d/19U7-gn8JcQ08Jy4JjLjc9BF0gkspoM5K/view?usp=sharing
+https://drive.google.com/file/d/1Xcu0Kat5bFhnNfJg-GDB_Sreh9-WcQ-T/view?usp=sharing
 <br><br>
 
-### 시현 영상
+### 동영상 
 https://youtu.be/vk8BofD4aAc
 <br><br>
 
