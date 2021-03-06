@@ -2,7 +2,7 @@
 <hr>
 
 ### PDF 포트폴리오
-https://drive.google.com/file/d/1rh9VBNIyrrJeZ7T0k0MsJ-3nrDxW_zEg/view?usp=sharing
+https://drive.google.com/file/d/19U7-gn8JcQ08Jy4JjLjc9BF0gkspoM5K/view?usp=sharing
 <br><br>
 
 ### 시현 영상
