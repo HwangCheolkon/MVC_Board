@@ -1,1 +1,23 @@
-# MVC_Board
+# MVC BOARD(JSP/Servlet)
+<hr>
+
+### PDF 포트폴리오
+https://drive.google.com/file/d/1MszOaRSKPMREsi1M8m635OQ_K-uQgyjg/view?usp=sharing
+<br><br>
+
+### 시현 영상
+https://youtu.be/vk8BofD4aAc
+<br><br>
+
+### 개발 환경
+#### 프론트엔드
+HTML 5 / CSS 3<br>
+JavaScript<br>
+jQuery 3.3<br>
+Bootstrap 4.1<br>
+
+#### 백엔드
+JDK 11(Eclipse IDE)<br>
+JSP / Servlet<br>
+Oracle Database(SQL Developer)<br>
+Tomcat 9.0<br>
