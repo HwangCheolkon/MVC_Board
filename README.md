@@ -26,4 +26,4 @@ Tomcat 9.0<br>
 <br>
 
 ### 패키지 구조
-<img src="https://user-images.githubusercontent.com/72964888/110210234-08c18980-7ed4-11eb-98aa-144cba529fd0.png">
+<img src="https://user-images.githubusercontent.com/72964888/111121676-5020d780-85b0-11eb-8e18-cc455427f34f.png">
